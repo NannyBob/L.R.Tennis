@@ -6,7 +6,12 @@
 extents = Vector2( 15, 15 )
 
 [node name="Ball Machine" type="StaticBody2D"]
+position = Vector2( 102.41, 59.936 )
+collision_layer = 4
+collision_mask = 6
 script = ExtResource( 1 )
+ballSpeedHigher = 500.0
+ballPath = "res://Entities/Ball.tscn"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource( 1 )
